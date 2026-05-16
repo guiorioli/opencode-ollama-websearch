@@ -26,11 +26,18 @@ Asking OpenCode about the latest PostgreSQL version:
 
 ## Supported providers
 
+This fork provides a way to work with Ollama:
+
+| Provider         | What you need                                                            |
+| ---------------- | ------------------------------------------------------------------------ |
+| Ollama           | Ollama configured in OpenCode (see [Ollama setup](#ollama-setup) below)  |
+
+For the following providers, use the original plugin @ [emilsvennesson/opencode-websearch](https://github.com/emilsvennesson/opencode-websearch)
+
 | Provider         | What you need                                                            |
 | ---------------- | ------------------------------------------------------------------------ |
 | Anthropic        | An Anthropic provider/model in OpenCode with built-in web search support |
 | Moonshot (Kimi)  | A Moonshot API key configured in OpenCode                                |
-| Ollama           | Ollama configured in OpenCode (see [Ollama setup](#ollama-setup) below)  |
 | OpenAI / ChatGPT | OpenAI configured in OpenCode (API key or ChatGPT connected)             |
 | GitHub Copilot   | GitHub Copilot connected in OpenCode                                     |
 
