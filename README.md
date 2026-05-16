@@ -40,7 +40,7 @@ Model-level web search support depends on the provider and model you use.
 
 This fork includes **native Ollama web search support**. When you use `ollama launch`, the provider is registered automatically but **without an API key**. The web search API is a cloud-only endpoint (`ollama.com/api/web_search`) and requires an Ollama Cloud API key.
 
-### Automated install (recommended)
+### Install
 
 Run the bundled `install_ollama.sh` script — it will link the plugin globally, install it in OpenCode, and configure your API key:
 
@@ -52,22 +52,6 @@ The script performs three steps:
 1. `npm link` — links the plugin globally via npm
 2. `opencode plugin "$(pwd)" -g` — registers the plugin in your global OpenCode config
 3. `node scripts/install.cjs` — prompts for your Ollama API key and saves it to `opencode.json`
-
-### Manual setup
-
-Or create an API key at [ollama.com/settings/keys](https://ollama.com/settings/keys) and add it manually:
-
-```json
-{
-  "provider": {
-    "ollama": {
-      "options": {
-        "apiKey": "{env:OLLAMA_API_KEY}"
-      }
-    }
-  }
-}
-```
 
 ### Known Ollama cloud models that support web search
 
@@ -99,15 +83,6 @@ Add the `"websearch"` flag to your model configuration in `opencode.json`:
 - `"auto"`: use this model as fallback when your active provider is not supported
 - `"always"`: always use this model for web search
 
-## Install
-
-Add the plugin to your `opencode.json` and OpenCode will install it automatically on startup.
-
-```json
-{
-  "plugin": ["opencode-websearch"]
-}
-```
 
 ## Configuration (optional)
 
