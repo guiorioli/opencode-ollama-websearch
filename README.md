@@ -1,4 +1,4 @@
-# opencode-websearch
+# opencode-ollama-websearch
 
 Fork of [emilsvennesson/opencode-websearch](https://github.com/emilsvennesson/opencode-websearch).
 
