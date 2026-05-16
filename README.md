@@ -93,37 +93,6 @@ By default the plugin uses your active model. The optional `"websearch"` flag le
 }
 ```
 
-## Development
-
-### Local development
-
-Clone the repo and symlink the source entry into your OpenCode plugin directory:
-
-```sh
-git clone https://github.com/emilsvennesson/opencode-websearch ~/.config/opencode/opencode-websearch
-cd ~/.config/opencode/opencode-websearch
-bun install
-mkdir -p ~/.config/opencode/plugin
-ln -sf ~/.config/opencode/opencode-websearch/src/index.ts ~/.config/opencode/plugin/websearch.ts
-```
-
-OpenCode loads the plugin directly from source at startup.
-
-> When using this symlink setup, remove `"opencode-websearch"` from the `plugin` array in `opencode.json` to avoid loading it twice.
-
-### Commands
-
-```sh
-bun install
-bun run format
-bun run format:check
-bun run lint
-bun run lint:fix
-bun run typecheck
-bun run check
-bun run build
-```
-
 ## License
 
 MIT
