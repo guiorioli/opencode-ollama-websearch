@@ -60,29 +60,6 @@ The script performs three steps:
 - `deepseek-v3.1-cloud`
 - `kimi-k2.6:cloud`
 
-### Enabling web search on your Ollama model
-
-Add the `"websearch"` flag to your model configuration in `opencode.json`:
-
-```json
-{
-  "provider": {
-    "ollama": {
-      "models": {
-        "kimi-k2.6:cloud": {
-          "options": {
-            "websearch": "auto"
-          }
-        }
-      }
-    }
-  }
-}
-```
-
-- `"auto"`: use this model as fallback when your active provider is not supported
-- `"always"`: always use this model for web search
-
 
 ## Configuration (optional)
 
